@@ -1,9 +1,8 @@
-import Header from "./components/header/header";
-
+ import Consult from './components/consultation/Consult'
 function App() {
   return (
     <div className="App">
-           <Header />
+         <Consult />
     </div>
   );
 }
