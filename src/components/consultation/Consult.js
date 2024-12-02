@@ -67,7 +67,7 @@ export default function Consult() {
           orientation="vertical"
           connector={<StepConnector />}
           sx={(theme) => ({
-            '--Stepper-verticalGap': '2.5rem',
+            '--Stepper-verticalGap': '-2.5rem',
             '--StepIndicator-size': '2.5rem',
             '--Step-gap': '1rem',
             '--Step-connectorInset': '0.5rem',
