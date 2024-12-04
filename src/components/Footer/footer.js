@@ -14,7 +14,7 @@ const Footer = () => {
           backgroundColor: "#4056F3",
           marginTop: "20px",
           width: "100%",
-          height: "500px",
+          height: "auto",
         }}
       >
         <div
@@ -52,9 +52,56 @@ const Footer = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "flex-start",
+            alignItems: "center",
+            gap: "100px",
+            // marginTop: "20px",
           }}
         >
+          <section
+            id="experience"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+            }}
+          >
+            <img
+              src="/exp-logo.png"
+              alt="experience-logo"
+              loading="lazy"
+              style={{
+                width: "100%",
+                maxWidth: "100px",
+                position: "relative",
+                left: "-100px",
+              }}
+            />
+            <section
+              id="year-of-experience"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                fontSize: "30px",
+                lineHeight: "1",
+                position: "relative",
+                left: "-80px",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: "60px",
+                  color: "#FFDC31",
+                  fontWeight: "bold",
+                }}
+              >
+                05+
+              </span>
+              <span style={{ fontSize: "12px", color: "white" }}>
+                Years of Experience
+              </span>
+            </section>
+          </section>
+
           <section
             id="social_media"
             style={{
@@ -63,43 +110,61 @@ const Footer = () => {
               gap: "10px",
             }}
           >
-            <img
-              src="/Facebook.png"
-              alt="fb-logo"
-              title="facebook"
-              loading="lazy"
-              style={{
-                width: "100%",
-                maxWidth: "50px",
-                left: "130px",
-                position: "relative",
-              }}
-            />
-            <img
-              src="/X.png"
-              alt="X-logo"
-              title="X"
-              loading="lazy"
-              style={{
-                width: "100%",
-                maxWidth: "50px",
-                position: "relative",
-                left: "140px",
-              }}
-            />
+            <a
+              href="https://www.facebook.com/login.php"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/Facebook.png"
+                alt="fb-logo"
+                title="facebook"
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  maxWidth: "50px",
+                  cursor: "pointer",
+                }}
+              />
+            </a>
 
-            <img
-              src="/instagram.png"
-              alt="Instagram-logo"
-              title="Instagram"
-              loading="lazy"
-              style={{
-                width: "100%",
-                maxWidth: "50px",
-                position: "relative",
-                left: "150px",
-              }}
-            />
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              
+              <img
+                src="/X.png"
+                alt="X-logo"
+                title="X"
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  maxWidth: "50px",
+                  cursor: "pointer",
+                }}
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/accounts/login/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              
+              <img
+                src="/instagram.png"
+                alt="Instagram-logo"
+                title="Instagram"
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  maxWidth: "50px",
+                  cursor: "pointer",
+                }}
+              />
+            </a>
           </section>
         </div>
 
@@ -141,24 +206,24 @@ const Footer = () => {
             alignItems: "center",
             height: "10vh",
             flexDirection: "column",
-            flexWrap:'wrap'
+            flexWrap: "wrap",
           }}
         >
           <section
             id="contact"
             style={{
               display: "flex",
-              flexDirection:'column',
-              alignItems:'center',
+              flexDirection: "column",
+              alignItems: "center",
               justifyContent: "center",
               backgroundColor: "white",
               boxSizing: "border-box",
               borderRadius: "5px",
               width: "100%",
-              maxWidth: "300px",
-              height:'auto',
+              maxWidth: "350px",
+              height: "auto",
               padding: "10px",
-              gap:'10px'
+              gap: "10px",
             }}
           >
             <section
@@ -201,6 +266,47 @@ const Footer = () => {
             </section>
           </section>
         </div>
+        <section
+          id="copy-rights"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            marginTop: "20px",
+            // textAlign: "center",
+            // width: "100%",
+          }}
+        >
+          <img
+            src="/hr_line.png"
+            alt="hr-line"
+            loading="lazy"
+            style={{
+              width: "100%",
+              maxWidth: "40%",
+            }}
+          />
+          <span
+            style={{
+              marginLeft: "10px",
+              marginRight: "10px",
+              fontSize: "14px",
+              whiteSpace: "nowrap",
+              color: "white",
+            }}
+          >
+            Copyright &copy; 2024 by Gravitorix. All Rights Reserved.
+          </span>
+          <img
+            src="/hr_line.png"
+            alt="hr-line"
+            loading="lazy"
+            style={{
+              width: "100%",
+              maxWidth: "40%",
+            }}
+          />
+        </section>
       </section>
     </section>
   );

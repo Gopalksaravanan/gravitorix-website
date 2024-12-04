@@ -5,6 +5,7 @@ import FirstPage from "./components/first_page";
 import Consult from "./components/consultation/Consult"
 import Industries from "./components/industries/industries";
 import TechStack from "./components/TechStack/techstack";
+import Maximize from "./components/maximize/maximize";
 import Footer from "./components/Footer/footer";
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
       <Header/>
       <FirstPage/>
            <OurServices />
-           <TechStack/>
-           <Industries />
+           <TechStack />
+           <Maximize />
     <Consult />
   <Footer/>
     
