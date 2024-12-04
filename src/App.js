@@ -7,21 +7,21 @@ import Industries from "./components/industries/industries";
 import TechStack from "./components/TechStack/techstack";
 import Maximize from "./components/maximize/maximize";
 import Footer from "./components/Footer/footer";
-import Introduction from "./components/Intro/Introduction";
+import Introduction from './components/Intro/Introduction'
+ 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <FirstPage/>
-      <Introduction/>
-           <OurServices />
-           <TechStack />
-           
-           <Maximize />
-           <Industries/>
-    <Consult />
-  <Footer/>
-    
+      <Header />
+      <FirstPage />
+      <Introduction />
+      <OurServices />
+      <TechStack />
+      <Maximize />
+      <Consult />
+      <Industries />
+      <Footer />
+
     </div>
   );
 }

@@ -7,9 +7,9 @@ import Experienceimage from '../../assets/Group 34.svg'
 
 function IntroductionComponent() {
   return (
-    <div style={{backgroundColor:"#F5F5F5"}}>
-
-      <div style={{ display: "flex", justifyContent: "center",  }}>
+    <>
+      <div>
+      <div style={{ display: "flex", justifyContent: "center", marginTop:-30 }}>
         <img
           src={IntroductionImage}
           alt="Introduction map"
@@ -105,7 +105,8 @@ function IntroductionComponent() {
           }}
         />
       </Box>
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -27,7 +27,7 @@ const FormInput = ({ label, type, name, register, id, componentType, error }) =>
                   color: "white",
                 }}
               >
-                {label}
+                {label} <span>*</span>
               </FormLabel>
               <Textarea
                 id={id}
@@ -38,13 +38,15 @@ const FormInput = ({ label, type, name, register, id, componentType, error }) =>
                 variant="solid"
                 sx={{
                   color: "white",
-                  background: "#283FE0",
                   border: "none",
                   borderBottom: "2px solid white",
                   borderRadius: 0,
                   outline: "none",
                   boxShadow: "none",
                   position: "relative",
+                  backgroundColor: "inherit",
+                  width: "51ch",
+                  left:0,
                   '&:hover': {
                     borderBottom: "2px solid white",
                   },
@@ -82,13 +84,13 @@ const FormInput = ({ label, type, name, register, id, componentType, error }) =>
                   color: "white",
                 }}
               >
-                {label}
+                {label} <span>*</span>
               </FormLabel>
               <TextField
                 id={id}
                 variant="standard"
                 sx={{
-                  width: "45ch",
+                  width: "55ch",
                   input: {
                     color: "white",
                   },
