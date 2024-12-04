@@ -91,7 +91,8 @@ const FirstPage = () => {
           style={{
             width: "100%",
             maxWidth: "412px",
-            height: "313px",
+            height:'100%',
+            maxHeight: "313px",
           }}
         />
       </section>
