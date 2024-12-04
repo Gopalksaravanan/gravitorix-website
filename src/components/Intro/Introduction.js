@@ -8,7 +8,7 @@ import Experienceimage from '../../assets/Group 34.svg'
 function IntroductionComponent() {
   return (
     <>
-
+      <div>
       <div style={{ display: "flex", justifyContent: "center", marginTop:-30 }}>
         <img
           src={IntroductionImage}
@@ -104,6 +104,7 @@ function IntroductionComponent() {
           }}
         />
       </Box>
+      </div>
     </>
   );
 }

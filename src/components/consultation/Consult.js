@@ -17,8 +17,10 @@ const styles = {
   backgroundImage: `url(${BackgroundImage})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  width:"2106px",
-  height:"1404px"
+  width:"100%",
+  height:"auto",
+  marginTop:15,
+  marginBottom:15
 };
  
 
@@ -79,6 +81,9 @@ export default function Consult() {
             color: 'blue',
             fontSize: { xs: '1.5rem', md: '2rem' },
             mb: 2,
+            textAlign:"center",
+            marginTop:"30px",
+            fontWeight:"bold"
           }}
         >
           Book Free Consultation

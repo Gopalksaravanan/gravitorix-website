@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import FormInput from '../CommonInput/index';
-import { schema } from "../validationSchema"; 
+import { schema } from "../validationSchema";
 import Button from '@mui/joy/Button';
 
 const formTypes = {
@@ -18,7 +18,7 @@ function FormComponent({ formControls = [], onSubmit, buttonText }) {
         formState: { errors },
     } = useForm({
         resolver: yupResolver(schema),
-        mode: "onSubmit",  
+        mode: "onSubmit",
     });
 
     const renderFormElement = (formElement) => {
@@ -32,8 +32,8 @@ function FormComponent({ formControls = [], onSubmit, buttonText }) {
                         id={formElement.id}
                         type={formElement.type}
                         name={formElement.name}
-                        register={register}   
-                        error={errors[formElement.name]}   
+                        register={register}
+                        error={errors[formElement.name]}
                     />
                 );
                 break;
@@ -43,9 +43,9 @@ function FormComponent({ formControls = [], onSubmit, buttonText }) {
                         label={formElement.label}
                         id={formElement.id}
                         name={formElement.name}
-                        componentType={formTypes.TEXTAREA} 
-                        register={register}    
-                        error={errors[formElement.name]}  
+                        componentType={formTypes.TEXTAREA}
+                        register={register}
+                        error={errors[formElement.name]}
                     />
                 );
                 break;
@@ -57,19 +57,35 @@ function FormComponent({ formControls = [], onSubmit, buttonText }) {
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            {formControls.map((formElement, index) => (
-                <div key={index} className="form-control">
-                    {renderFormElement(formElement)}
-                    {errors[formElement.name] && (
-                        <p className="error-message">{errors[formElement.name]?.message}</p>
-                    )}
+        <div style={{
+            background: "#283FE0",
+            borderRadius: "15px",
+            color: "#ffffff",
+            width: "500px",
+            padding: " 66px 24px 65px",
+            borderRadius: "15px",
+            width: "457px",
+            height: "100%",
+            maxHeight: "551px",
+            display:''
+
+        }}>
+            <form onSubmit={handleSubmit(onSubmit)} style={{ width: "100%", maxWidth: "400px" }}>
+                {formControls.map((formElement, index) => (
+                    <div key={index} className="form-control">
+                        {renderFormElement(formElement)}
+                        {errors[formElement.name] && (
+                            <p className="error-message">{errors[formElement.name]?.message}</p>
+                        )}
+                    </div>
+                ))}
+                <div style={{marginTop: "46px", marginBottom: "-39px"}}>
+                <Button size="md" variant="solid" type="submit" style={{ background: "black" }}>
+                    {buttonText}
+                </Button>
                 </div>
-            ))}
-            <Button size="md" variant="solid" type="submit" style={{background:"black"}}>
-         {buttonText}
-        </Button>
-        </form>
+            </form>
+        </div>
     );
 }
 
