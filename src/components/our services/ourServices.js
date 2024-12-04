@@ -16,11 +16,7 @@ const OurServices = () => {
     >
       <h1
         style={{
-<<<<<<< HEAD
-          color: "#123ABC",
-=======
           color: "#283FE0",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
           marginTop: 10,
           marginBottom: 0,
           fontSize: "45px",
@@ -29,10 +25,6 @@ const OurServices = () => {
         OUR SERVICES
       </h1>
       <h4 style={{ marginTop: 0, marginBottom: 30, fontSize: "25px" }}>
-<<<<<<< HEAD
-        {" "}
-=======
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
         Our Offshore Devolpment Services
       </h4>
 
@@ -49,11 +41,7 @@ const OurServices = () => {
           style={{
             width: "635px",
             height: "274px",
-<<<<<<< HEAD
-            backgroundColor: "#123ABC",
-=======
             backgroundColor: "#283FE0",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
             color: "#FFFFFF",
             marginRight: "50px",
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
@@ -61,11 +49,7 @@ const OurServices = () => {
         >
           <h5
             style={{
-<<<<<<< HEAD
-              color: "yellow",
-=======
               color: "#FFDC31",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
               fontSize: "30px",
               margin: 10,
               textAlign: "left",
@@ -85,11 +69,7 @@ const OurServices = () => {
               textAlign: "left",
               margin: 10,
               marginTop: 30,
-<<<<<<< HEAD
-              color: "yellow",
-=======
               color: "#FFDC31",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
               cursor: "pointer",
             }}
           >
@@ -99,10 +79,6 @@ const OurServices = () => {
         <img
           alt="img"
           src={FirstImage}
-<<<<<<< HEAD
-          loading="lazy"
-=======
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
           style={{
             width: "515px",
             height: "274px",
@@ -125,10 +101,6 @@ const OurServices = () => {
         <img
           alt="img"
           src={SecondImage}
-<<<<<<< HEAD
-          loading="lazy"
-=======
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
           style={{
             marginRight: "50px",
             width: "515px",
@@ -142,22 +114,14 @@ const OurServices = () => {
           style={{
             width: "635px",
             height: "274px",
-<<<<<<< HEAD
-            backgroundColor: "#123ABC",
-=======
             backgroundColor: "#283FE0",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
             color: "#FFFFFF",
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
           }}
         >
           <h5
             style={{
-<<<<<<< HEAD
-              color: "yellow",
-=======
               color: "#FFDC31",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
               fontSize: "30px",
               margin: 10,
               textAlign: "left",
@@ -177,11 +141,7 @@ const OurServices = () => {
               textAlign: "left",
               margin: 10,
               marginTop: 30,
-<<<<<<< HEAD
-              color: "yellow",
-=======
               color: "#FFDC31",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
               cursor: "pointer",
             }}
           >
@@ -203,11 +163,7 @@ const OurServices = () => {
           style={{
             width: "635px",
             height: "274px",
-<<<<<<< HEAD
-            backgroundColor: "#123ABC",
-=======
             backgroundColor: "#283FE0",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
             color: "#FFFFFF",
             marginRight: "50px",
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
@@ -215,11 +171,7 @@ const OurServices = () => {
         >
           <h5
             style={{
-<<<<<<< HEAD
-              color: "yellow",
-=======
               color: "#FFDC31",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
               fontSize: "30px",
               margin: 10,
               textAlign: "left",
@@ -239,11 +191,7 @@ const OurServices = () => {
               textAlign: "left",
               margin: 10,
               marginTop: 30,
-<<<<<<< HEAD
-              color: "yellow",
-=======
               color: "#FFDC31",
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
               cursor: "pointer",
             }}
           >
@@ -253,10 +201,6 @@ const OurServices = () => {
         <img
           alt="img"
           src={ThirdImage}
-<<<<<<< HEAD
-          loading="lazy"
-=======
->>>>>>> 4485e9e73e55c5dfaaf0b996efeb8dc3572e1c3f
           style={{
             width: "515px",
             height: "274px",

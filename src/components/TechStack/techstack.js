@@ -8,7 +8,7 @@ const TechStack = () => {
     { id: "devops", label: "DevOps/Clouds", imgSrc: "/DevOps.PNG" },
     { id: "design", label: "Design", imgSrc: "/Design.png" },
     {
-      id: "quality",
+      id: "qulaity assurance",
       label: "Quality Assurance",
       imgSrc: "/Quality_Assurance.png",
     },
@@ -16,14 +16,15 @@ const TechStack = () => {
 
   return (
     <section
-      id="common_style"
+      id="common_style_techstack"
       style={{
         display: "flex",
         backgroundColor: "#8695FD",
         margin: "0 auto",
         padding: 0,
-        height: "1200px", // Adjust height dynamically
+        height: "auto",
         flexDirection: "column",
+        position: "relative",
       }}
     >
       <header
@@ -57,16 +58,29 @@ const TechStack = () => {
           including AI-powered tools, to meet your offshore development needs.
         </p>
       </header>
+      {/* Vertical Line Image */}
+      <img
+        src="vertical line.png" 
+        alt="Vertical Line"
+        style={{
+          position: "absolute",
+          top: "200px", 
+          left: "50%", 
+          transform: "translateX(-50%)", 
+          height: "80%", 
+          zIndex: 1, 
+          width:'2px'
+        }}
+      />
       <main
         id="tech_stack_container"
         style={{
           display: "flex",
+          flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "flex-start",
-          flexWrap: "wrap", // Enable wrapping
           gap: "50px",
           marginTop: "20px",
-          position: "relative",
         }}
       >
         {sections.map((section, index) => (
@@ -78,8 +92,7 @@ const TechStack = () => {
                 flexDirection: "column",
                 gap: "20px",
                 alignItems: "center",
-                width: "32%",
-                position: "relative",
+                width: "45%", // Force wrapping by limiting width
               }}
             >
               <header
@@ -105,30 +118,14 @@ const TechStack = () => {
                     maxWidth: "380px",
                     height: "100%",
                     maxHeight: "150px",
-                    
                   }}
                 />
-                {/* Pseudo-vertical border */}
-                {(index + 1) % 2 !== 0 && index < sections.length - 1 && (
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: -10,
-                      
-                      right: 0, 
-                      width: "2px", 
-                      height: "220px", 
-                      backgroundColor: "white", 
-                   
-                    }}
-                  />
-                )}
               </section>
             </section>
             {(index + 1) % 2 === 0 && index < sections.length - 1 && (
               <hr
                 style={{
-                  width: "65%",
+                  width: "90%",
                   border: "1px solid #fff",
                   margin: "20px auto",
                 }}
