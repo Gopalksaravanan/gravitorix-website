@@ -49,6 +49,7 @@ const Industries = () => {
       >
         <img
           src={FintechImage}
+          loading="lazy"
           style={{
             height: "371px",
             width: "371px",
@@ -58,6 +59,7 @@ const Industries = () => {
         />
         <img
           src={EdutechImage}
+          loading="lazy"
           style={{
             height: "371px",
             width: "371px",
@@ -77,6 +79,7 @@ const Industries = () => {
       >
         <img
           src={EcommerceImage}
+          loading="lazy"
           style={{
             height: "371px",
             width: "371px",
@@ -86,6 +89,7 @@ const Industries = () => {
         />
         <img
           src={StreamingImage}
+          loading="lazy"
           style={{
             height: "371px",
             width: "371px",

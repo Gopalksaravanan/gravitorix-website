@@ -118,6 +118,7 @@ const TechStack = () => {
                     maxWidth: "380px",
                     height: "100%",
                     maxHeight: "150px",
+                    marginBottom:'30px'
                   }}
                 />
               </section>

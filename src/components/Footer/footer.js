@@ -7,6 +7,7 @@ const Footer = () => {
       style={{
         margin: 0,
         padding: 0,
+        
       }}
     >
       <section
@@ -14,7 +15,7 @@ const Footer = () => {
           backgroundColor: "#4056F3",
           marginTop: "20px",
           width: "100%",
-          height: "auto",
+          height: "450px",
         }}
       >
         <div
@@ -273,6 +274,7 @@ const Footer = () => {
             flexDirection: "row",
             alignItems: "center",
             marginTop: "20px",
+           
             // textAlign: "center",
             // width: "100%",
           }}

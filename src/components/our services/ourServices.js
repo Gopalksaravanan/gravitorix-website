@@ -17,7 +17,7 @@ const OurServices = () => {
       <h1
         style={{
           color: "#283FE0",
-          marginTop: 10,
+          marginTop: 30,
           marginBottom: 0,
           fontSize: "45px",
         }}

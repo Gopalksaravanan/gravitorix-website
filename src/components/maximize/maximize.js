@@ -36,7 +36,7 @@ const Maximize = () => {
               marginRight: "30px",
             }}
           >
-            <img src={RapidImage} style={{ width: "74px", height: "52px" }} />
+            <img src={RapidImage} loading="lazy" style={{ width: "74px", height: "52px" }} />
             <h4
               style={{
                 color: "#FFDC31",
@@ -69,7 +69,7 @@ const Maximize = () => {
               marginRight: "60px",
             }}
           >
-            <img src={FutureImage} style={{ width: "52px", height: "52px" }} />
+            <img src={FutureImage} loading="lazy" style={{ width: "52px", height: "52px" }} />
             <h4
               style={{
                 color: "#FFDC31",
@@ -104,7 +104,7 @@ const Maximize = () => {
               marginRight: "30px",
             }}
           >
-            <img src={TopImage} style={{ width: "53px", height: "54px" }} />
+            <img src={TopImage} loading="lazy" style={{ width: "53px", height: "54px" }} />
             <h4
               style={{
                 color: "#FFDC31",
@@ -139,7 +139,7 @@ const Maximize = () => {
             }}
           >
             <img
-              src={ElevatedImage}
+              src={ElevatedImage} loading="lazy"
               style={{ width: "51px", height: "51px" }}
             />
             <h4
@@ -169,6 +169,7 @@ const Maximize = () => {
 
         <img
           src={Image}
+          loading="lazy"
           style={{
             width: "374px",
             height: "611px",

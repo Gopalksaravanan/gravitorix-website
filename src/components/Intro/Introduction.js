@@ -7,9 +7,9 @@ import Experienceimage from '../../assets/Group 34.svg'
 
 function IntroductionComponent() {
   return (
-    <>
+    <div style={{backgroundColor:"#F5F5F5"}}>
 
-      <div style={{ display: "flex", justifyContent: "center", marginTop:-30 }}>
+      <div style={{ display: "flex", justifyContent: "center",  }}>
         <img
           src={IntroductionImage}
           alt="Introduction map"
@@ -32,7 +32,7 @@ function IntroductionComponent() {
           flexDirection: "column",
           justifySelf: "center",
           position: "relative",
-          marginTop:3,
+           marginTop:3,
           marginBottom:3
         }}
       >
@@ -53,16 +53,16 @@ function IntroductionComponent() {
               padding: "20px",
             }}
           >
-            <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: 2 }}>
+            <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: 2,textAlign:"left",color:"#283fe0" }}>
               Trusted Offshore Developers for Your Tech Needs
             </Typography>
-            <Typography variant="body1" sx={{ marginBottom: 2, fontSize: 18 , lineBreak:1.5}}>
+            <Typography variant="body1" sx={{ marginBottom: 2, fontSize: 18 , lineBreak:1.5,textAlign:"left"}}>
               Looking to hire offshore developers for your projects? Gravitorix is proud to present its pool of XX+ tech
               experts, with experience across various domains. Our dedicated developers are proficient in various
               technologies, tools, and frameworks. With our AI-powered development practices, scale your team as needed
               without the issue of long-term commitments.
             </Typography>
-            <Typography variant="body1" sx={{ fontSize: 18, lineBreak:1.5 }}>
+            <Typography variant="body1" sx={{ fontSize: 18, lineBreak:1.5,textAlign:"left" }}>
               Get in touch to discuss your project requirements, access our 40-hour free trial, and hire software
               developers for your team! Let Gravitorix be your trusted outsourcing partner for all your remote tech
               hiring needs.
@@ -76,7 +76,7 @@ function IntroductionComponent() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              alignItems: "center"
             }}
           >
             <img
@@ -101,10 +101,11 @@ function IntroductionComponent() {
             height: "auto",
             maxWidth: "900px",
             maxHeight: "137px",
+            marginBottom:"50px"
           }}
         />
       </Box>
-    </>
+    </div>
   );
 }
 
