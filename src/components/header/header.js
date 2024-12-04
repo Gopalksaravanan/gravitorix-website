@@ -8,17 +8,18 @@ function Header() {
         padding: 0,
         backgroundColor: "#283FE0",
         display: "flex",
-        width: '100%',
-        height: '124px',
+        width: "100%",
+        height: "124px",
         alignItems: "center",
         boxSizing: "border-box",
       }}
     >
       <header
         style={{
-          maxWidth: '90%',
-          height: '64.42px',
-          // justifyContent: "space-between",
+          width: "100%",
+          maxWidth: "90%",
+          height: "64.42px",
+          justifyContent: "space-between",
           display: "flex",
           alignItems: "center",
           padding: "0 90px",
@@ -32,6 +33,7 @@ function Header() {
             color: "white",
             fontSize: "24px",
             display: "flex",
+            alignItems: "center",
           }}
         >
           <img
@@ -40,58 +42,85 @@ function Header() {
             title="Gravitorix"
             loading="lazy"
             style={{
-              maxWidth: '100%',
-              height: 'auto',
+              maxWidth: "100%",
+              height: "auto",
             }}
           />
         </section>
-        <section
-          id="services"
+        <div
           style={{
-            textAlign: "center",
-            color: "white",
-            // width: '20px',
-            // height: 31,
-            marginLeft: "200px",
-            marginBottom:'10px'
+            display: "flex",
+            alignItems: "center",
+            gap: "25px",
+            fontSize: "20px",
           }}
         >
-          Services
-        </section>
-        <section
-          id="contact"
-          style={{
-            textAlign: "center",
-            color: "white",
-            // width: '20px',
-            // height: 31,
-            //  fontSize:'30px',
-            marginLeft: "25px",
-            marginBottom:'10px'
-          }}
-        >
-          Contact
-        </section>
-        <section id="enquirenow-btn">
-          <button
+          <section
+            id="services"
             style={{
-              padding: "10px 20px",
-              backgroundColor: "#000",
+              textAlign: "center",
               color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-              marginLeft: "25px",
+              // width: '20px',
+              // height: 31,
+              // marginLeft: "200px",
+              // marginBottom:'10px',
             }}
           >
-            Enquire Now
-          </button>
-        </section>
+            <a
+              href="#common_style_techstack"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontSize: "20px",
+                cursor: "pointer",
+              }}
+            >
+              Services
+            </a>
+          </section>
+          <section
+            id="contact"
+            style={{
+              textAlign: "center",
+              color: "white",
+              // width: '20px',
+              // height: 31,
+              //  fontSize:'30px',
+              // marginLeft: "25px",
+              // marginBottom:'10px'
+            }}
+          >
+            <a
+              href="#common_style_techstack"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontSize: "20px",
+                cursor: "pointer",
+              }}
+            >
+              Contact
+            </a>
+          </section>
+          <section id="enquirenow-btn">
+            <button
+              style={{
+                padding: "10px 20px",
+                backgroundColor: "#000",
+                color: "white",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+                // marginLeft: "25px",
+              }}
+            >
+              Enquire Now
+            </button>
+          </section>
+        </div>
       </header>
     </nav>
   );
 }
 
 export default Header;
-
-

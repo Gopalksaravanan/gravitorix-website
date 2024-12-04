@@ -79,7 +79,6 @@ const OurServices = () => {
         <img
           alt="img"
           src={FirstImage}
-          loading="lazy"
           style={{
             width: "515px",
             height: "274px",
