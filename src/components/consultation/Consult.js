@@ -2,6 +2,9 @@ import React from 'react';
 import { Box, Stepper, Step, StepLabel, Typography, StepConnector } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Form from './Form';
+import BackgroundImage from '../../assets/rb.svg'
+ 
+ 
 
 const CustomConnector = styled(StepConnector)(({ theme }) => ({
   '& .MuiStepConnector-line': {
@@ -9,6 +12,15 @@ const CustomConnector = styled(StepConnector)(({ theme }) => ({
     borderWidth: 2,
   },
 }));
+
+const styles = {
+  backgroundImage: `url(${BackgroundImage})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  width:"2106px",
+  height:"1404px"
+};
+ 
 
 function CustomStepIcon(props) {
   const { className } = props;
@@ -48,6 +60,8 @@ export default function Consult() {
 
   return (
     <>
+    <div className='form-container' style={styles}>
+      <div className='form-section' >
       <Box
         sx={{
           display: 'flex',
@@ -56,7 +70,8 @@ export default function Consult() {
           alignItems: 'center',
           textAlign: 'center',
           px: 2,
-        }}
+       
+            }}
       >
         <Typography
           variant="h2"
@@ -123,6 +138,8 @@ export default function Consult() {
       >
         <Form />
       </Box>
+      </div>
+      </div>
     </>
   );
 }
