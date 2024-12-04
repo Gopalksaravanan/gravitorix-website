@@ -45,22 +45,23 @@ const OurServices = () => {
             color: "#FFFFFF",
             marginRight: "50px",
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+            paddingLeft:'10px',
           }}
         >
           <h5
             style={{
               color: "#FFDC31",
               fontSize: "30px",
-              margin: 10,
+              margin: 8,
               textAlign: "left",
             }}
           >
             Hire Dedicated Teams
           </h5>
-          <p style={{ fontSize: "18px", margin: 10, textAlign: "left" }}>
-            Hire a dedicated devolpment team with highly skilled developers.
-            Save yourself from recruitment hassles and infrastructure costs. Our
-            AI-enabled hiring process helps you find the perfect fit for your
+          <p style={{ fontSize: "16px", margin: 10, textAlign: "left" }}>
+            Hire a dedicated devolpment team with highly skilled developers. <br />
+            Save yourself from recruitment hassles and infrastructure costs. Our <br />
+            AI-enabled  hiring process helps you find the perfect fit for your
             project quickly and efficiently.
           </p>
           <p
@@ -71,6 +72,7 @@ const OurServices = () => {
               marginTop: 30,
               color: "#FFDC31",
               cursor: "pointer",
+              textDecoration:'underline'
             }}
           >
             Enquiry Now
@@ -117,19 +119,20 @@ const OurServices = () => {
             backgroundColor: "#283FE0",
             color: "#FFFFFF",
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+            paddingLeft:'10px',
           }}
         >
           <h5
             style={{
               color: "#FFDC31",
               fontSize: "30px",
-              margin: 10,
+              margin: 8,
               textAlign: "left",
             }}
           >
             Software Devolpment
           </h5>
-          <p style={{ fontSize: "18px", margin: 10, textAlign: "left" }}>
+          <p style={{ fontSize: "16px", margin: 10, textAlign: "left" }}>
             Get progressive software development services at Gravitorix. We
             develop robust, scalable and secured web and mobile applications,
             built using AI-enhanced tools, to level up your business needs.
@@ -143,6 +146,7 @@ const OurServices = () => {
               marginTop: 30,
               color: "#FFDC31",
               cursor: "pointer",
+              textDecoration:'underline'
             }}
           >
             Enquiry Now
@@ -157,6 +161,7 @@ const OurServices = () => {
           height: "283px",
           width: "1200px",
           marginBottom: "50px",
+          
         }}
       >
         <Card
@@ -167,23 +172,25 @@ const OurServices = () => {
             color: "#FFFFFF",
             marginRight: "50px",
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+            paddingLeft:'10px',
+            
           }}
         >
           <h5
             style={{
               color: "#FFDC31",
               fontSize: "30px",
-              margin: 10,
+              margin: 8,
               textAlign: "left",
             }}
           >
             Upgrade and Revamp your Project
           </h5>
-          <p style={{ fontSize: "18px", margin: 10, textAlign: "left" }}>
-            Modernize, redesign, and upgrade your application to offer updated
+          <p style={{ fontSize: "16px", margin: 10, textAlign: "left" ,}}>
+            Modernize, redesign, and upgrade your application to offer updated 
             and flexible features that will enhance your business performance
-            and uplift your profit margin. We utilize AI-assisted devolpment to
-            simplify the process and deliver exceptional results faster.
+            and  uplift your profit margin. We utilize AI-assisted devolpment to 
+            simplify the <br /> process and deliver exceptional results faster.
           </p>
           <p
             style={{
@@ -193,6 +200,7 @@ const OurServices = () => {
               marginTop: 30,
               color: "#FFDC31",
               cursor: "pointer",
+              textDecoration:'underline'
             }}
           >
             Enquiry Now

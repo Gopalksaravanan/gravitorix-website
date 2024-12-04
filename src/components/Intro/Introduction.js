@@ -7,9 +7,9 @@ import Experienceimage from '../../assets/Group 34.svg'
 
 function IntroductionComponent() {
   return (
-    <>
-      <div>
-      <div style={{ display: "flex", justifyContent: "center", marginTop:-30 }}>
+    <div style={{backgroundColor:"#F5F5F5"}}>
+
+      <div style={{ display: "flex", justifyContent: "center",  }}>
         <img
           src={IntroductionImage}
           alt="Introduction map"
@@ -32,7 +32,7 @@ function IntroductionComponent() {
           flexDirection: "column",
           justifySelf: "center",
           position: "relative",
-           marginTop:3,
+          marginTop:3,
           marginBottom:3
         }}
       >
@@ -105,8 +105,7 @@ function IntroductionComponent() {
           }}
         />
       </Box>
-      </div>
-    </>
+    </div>
   );
 }
 

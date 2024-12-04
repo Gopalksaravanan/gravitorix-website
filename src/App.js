@@ -18,8 +18,9 @@ function App() {
       <OurServices />
       <TechStack />
       <Maximize />
-      <Consult />
+      
       <Industries />
+      <Consult />
       <Footer />
 
     </div>

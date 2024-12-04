@@ -13,7 +13,7 @@ const Footer = () => {
       <section
         style={{
           backgroundColor: "#4056F3",
-          marginTop: "20px",
+          // marginTop: "20px",
           width: "100%",
           height: "450px",
         }}
