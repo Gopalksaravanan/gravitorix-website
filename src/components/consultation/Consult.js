@@ -1,11 +1,50 @@
-import * as React from 'react';
-import { Box, Typography } from '@mui/material';
-import Stepper from '@mui/joy/Stepper';
-import Step, { stepClasses } from '@mui/joy/Step';
-import StepIndicator, { stepIndicatorClasses } from '@mui/joy/StepIndicator';
-import { Typography as JoyTypography } from '@mui/joy';
-import { StepConnector } from '@mui/material';
+import React from 'react';
+import { Box, Stepper, Step, StepLabel, Typography, StepConnector } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Form from './Form';
+import BackgroundImage from '../../assets/rb.svg'
+ 
+ 
+
+const CustomConnector = styled(StepConnector)(({ theme }) => ({
+  '& .MuiStepConnector-line': {
+    borderColor: 'blue',
+    borderWidth: 2,
+  },
+}));
+
+const styles = {
+  backgroundImage: `url(${BackgroundImage})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  width:"2106px",
+  height:"1404px"
+};
+ 
+
+function CustomStepIcon(props) {
+  const { className } = props;
+
+  return (
+    <div
+      className={className}
+      style={{
+        width: 24,
+        height: 24,
+        borderRadius: '50%',
+        backgroundColor: 'blue',
+        color: 'white',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: '14px',
+        fontWeight: 'bold',
+      }}
+    >
+      {props.icon}
+    </div>
+  );
+}
 
 export default function Consult() {
   const steps = [
@@ -21,6 +60,8 @@ export default function Consult() {
 
   return (
     <>
+    <div className='form-container' style={styles}>
+      <div className='form-section' >
       <Box
         sx={{
           display: 'flex',
@@ -29,7 +70,8 @@ export default function Consult() {
           alignItems: 'center',
           textAlign: 'center',
           px: 2,
-        }}
+       
+            }}
       >
         <Typography
           variant="h2"
@@ -53,73 +95,50 @@ export default function Consult() {
         </Typography>
       </Box>
 
-      <div
+      <Box
         className="stepper-container"
-        style={{
+        sx={{
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           px: 2,
+          mt:4
         }}
       >
         <Stepper
           orientation="vertical"
-          connector={<StepConnector />}
-          sx={(theme) => ({
-            '--Stepper-verticalGap': '-2.5rem',
-            '--StepIndicator-size': '2.5rem',
-            '--Step-gap': '1rem',
-            '--Step-connectorInset': '0.5rem',
-            '--Step-connectorRadius': '1rem',
-            '--Step-connectorThickness': '4px',
-            '--joy-palette-success-solidBg': 'var(--joy-palette-success-400)',
-            [`& .${stepClasses.completed}`]: {
-              '&::after': { bgcolor: 'success.solidBg' },
-            },
-            [`& .${stepClasses.active}`]: {
-              [`& .${stepIndicatorClasses.root}`]: {
-                border: '4px solid',
-                borderColor: '#fff',
-                boxShadow: `0 0 0 1px ${theme.vars.palette.primary[500]}`,
-              },
-            },
-            [`& .${stepClasses.disabled} *`]: {
-              color: 'neutral.softDisabledColor',
-            },
-            [`& .${stepClasses.title}`]: {
-              textTransform: 'uppercase',
-              letterSpacing: '1px',
-              fontSize: '10px',
-            },
-          })}
+          connector={<CustomConnector />}
         >
           {steps.map((step, index) => (
-            <Step key={index} completed={step.completed} active={step.active} disabled={step.disabled}>
-              <Box>
-                <StepIndicator
-                  variant="solid"
-                  color={step.completed ? 'success' : step.active ? 'primary' : 'neutral'}
-                  sx={{ width: '2.5rem', height: '2.5rem' }}
-                >
-                  {step.completed ? (
-                    1
-                  ) : step.active ? (
-                    2
-                  ) : (
-                    index + 1
-                  )}
-                </StepIndicator>
-                <JoyTypography level="title-sm">{step.label}</JoyTypography>
-                <Typography variant="body2" sx={{ ml: 4, mt: 0.5 }}>
-                  {step.description}
+            <Step key={index}>
+              <StepLabel StepIconComponent={CustomStepIcon}>
+                <Typography sx={{ fontSize: '16px', fontWeight: 'bold', color: 'black' }}>
+                  {step.label}
                 </Typography>
-              </Box>
+              </StepLabel>
+              <Typography sx={{ fontSize: '14px', ml: 4, mt: -1, color: 'black' }}>
+                {step.description}
+              </Typography>
             </Step>
           ))}
         </Stepper>
 
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          px: 2,
+          mt:5
+        }}
+      >
         <Form />
+      </Box>
+      </div>
       </div>
     </>
   );
