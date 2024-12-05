@@ -12,6 +12,7 @@ function Header() {
         height: "124px",
         alignItems: "center",
         boxSizing: "border-box",
+        justifyContent: "center",
       }}
     >
       <header
@@ -22,9 +23,8 @@ function Header() {
           justifyContent: "space-between",
           display: "flex",
           alignItems: "center",
-          padding: "0 90px",
-          boxSizing: "content-box",
-          margin: "0 auto",
+          //  padding: "0 10px",
+          boxSizing: "border-box",
         }}
       >
         <section
@@ -34,6 +34,9 @@ function Header() {
             fontSize: "24px",
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            left: "-50px",
           }}
         >
           <img
@@ -51,8 +54,11 @@ function Header() {
           style={{
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
             gap: "25px",
             fontSize: "20px",
+            position: "relative",
+            left: "50px",
           }}
         >
           <section
@@ -60,14 +66,10 @@ function Header() {
             style={{
               textAlign: "center",
               color: "white",
-              // width: '20px',
-              // height: 31,
-              // marginLeft: "200px",
-              // marginBottom:'10px',
             }}
           >
             <a
-              href="#common_style_techstack"
+              href="#consult"
               style={{
                 textDecoration: "none",
                 color: "white",
@@ -83,15 +85,10 @@ function Header() {
             style={{
               textAlign: "center",
               color: "white",
-              // width: '20px',
-              // height: 31,
-              //  fontSize:'30px',
-              // marginLeft: "25px",
-              // marginBottom:'10px'
             }}
           >
             <a
-              href="#common_style_techstack"
+              href="#consult"
               style={{
                 textDecoration: "none",
                 color: "white",
@@ -105,16 +102,26 @@ function Header() {
           <section id="enquirenow-btn">
             <button
               style={{
-                padding: "10px 20px",
+                padding: "12px 20px",
+                fontSize: "20px",
                 backgroundColor: "#000",
                 color: "white",
                 border: "none",
                 borderRadius: "4px",
                 cursor: "pointer",
-                // marginLeft: "25px",
               }}
             >
-              Enquire Now
+              <a
+                href="#consult"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontSize: "20px",
+                  cursor: "pointer",
+                }}
+              >
+                Enquire Now
+              </a>
             </button>
           </section>
         </div>

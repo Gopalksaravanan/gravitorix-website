@@ -2,8 +2,8 @@ import React from "react";
 
 const TechStack = () => {
   const sections = [
-    { id: "frontend", label: "Front End", imgSrc: "/frontend_img.PNG" },
-    { id: "backend", label: "Back End", imgSrc: "/backend_img.PNG" },
+    { id: "frontend", label: "Front-End", imgSrc: "/frontend_img.PNG" },
+    { id: "backend", label: "Back-End", imgSrc: "/backend_img.PNG" },
     { id: "mobile", label: "Mobile", imgSrc: "/Mobile_app.PNG" },
     { id: "devops", label: "DevOps/Clouds", imgSrc: "/DevOps.PNG" },
     { id: "design", label: "Design", imgSrc: "/Design.png" },
@@ -97,7 +97,8 @@ const TechStack = () => {
             >
               <header
                 style={{
-                  fontSize: "17px",
+                  fontSize: "20px",
+                  fontFamily:'sans-serif',
                   color: "#FFDC31",
                   backgroundColor: "black",
                   padding: "8px 25px",
@@ -115,9 +116,9 @@ const TechStack = () => {
                   loading="lazy"
                   style={{
                     width: "100%",
-                    maxWidth: "380px",
+                     maxWidth: "95%",
                     height: "100%",
-                    maxHeight: "150px",
+                    maxHeight: "200px",
                     marginBottom:'30px'
                   }}
                 />

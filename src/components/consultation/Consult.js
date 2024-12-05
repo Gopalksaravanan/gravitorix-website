@@ -28,7 +28,7 @@ function CustomStepIcon(props) {
   const { className } = props;
 
   return (
-    <div
+    <div id='consult'
       className={className}
       style={{
         width: 24,

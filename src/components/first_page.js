@@ -79,7 +79,17 @@ const FirstPage = () => {
               cursor: "pointer",
             }}
           >
-            Enquiry Now
+            <a
+              href="#consult"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontSize: "20px",
+                cursor: "pointer",
+              }}
+            >
+              Enquiry Now
+            </a>
           </button>
         </section>
         <section
@@ -88,7 +98,7 @@ const FirstPage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "flex-end",
-           marginTop:'-250px',
+            marginTop: "-250px",
             alignItems: "center",
             paddingRight: "20px",
           }}
