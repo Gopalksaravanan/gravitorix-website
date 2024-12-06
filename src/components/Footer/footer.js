@@ -42,8 +42,8 @@ const Footer = () => {
               style={{
                 width: "100%",
                 maxWidth: "300px",
-                left: "140px",
-                position: "relative",
+                // left: "140px",
+                // position: "relative",
               }}
             />
           </section>
