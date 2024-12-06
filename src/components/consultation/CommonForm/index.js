@@ -87,7 +87,7 @@ function FormComponent({ formControls = [], onSubmit, buttonText }) {
                     {renderFormElement(formElement)}
                 </div>
             ))}
-            <div style={{ marginTop: "46px", marginBottom: "-39px" }}>
+            <div style={{ marginTop: "46px", marginBottom: "-39px" , marginLeft:"75px"}}>
                 <Button size="md" variant="solid" type="submit" style={{ background: "black" }}>
                     {buttonText}
                 </Button>

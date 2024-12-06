@@ -1,9 +1,9 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Textarea from '@mui/joy/Textarea';
-import FormControl from '@mui/joy/FormControl';
-import FormLabel from '@mui/joy/FormLabel';
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Textarea from "@mui/joy/Textarea";
+import FormControl from "@mui/joy/FormControl";
+import FormLabel from "@mui/joy/FormLabel";
 
 const FormInput = ({ label, type, name, register, id, componentType }) => {
   return (
@@ -11,16 +11,15 @@ const FormInput = ({ label, type, name, register, id, componentType }) => {
       <div
         className="form-control"
         style={{
-          color: "white"
+          color: "white",
         }}
       >
         <Box
           component="div"
-          sx={{ '& > :not(style)': { m: 1 } }}
+          sx={{ "& > :not(style)": { m: 1 } }}
         >
           {componentType === "textarea" ? (
             <div>
-
               <FormLabel
                 htmlFor={id}
                 style={{
@@ -45,8 +44,9 @@ const FormInput = ({ label, type, name, register, id, componentType }) => {
                   boxShadow: "none",
                   position: "relative",
                   backgroundColor: "inherit",
-                  width: "51ch",
-                  left:0,
+                  width: "100%", 
+                  maxWidth: "500px", 
+                  minWidth: "500px", 
                   '&:hover': {
                     borderBottom: "2px solid white",
                   },
@@ -68,16 +68,11 @@ const FormInput = ({ label, type, name, register, id, componentType }) => {
                   '&::before': {
                     boxShadow: "none",
                   },
-                  
                 }}
               />
-
-
-
             </div>
           ) : (
             <div>
-
               <FormLabel
                 htmlFor={id}
                 style={{
@@ -90,7 +85,9 @@ const FormInput = ({ label, type, name, register, id, componentType }) => {
                 id={id}
                 variant="standard"
                 sx={{
-                  width: "55ch",
+                  width: "100%",  
+                  maxWidth: "500px", 
+                  minWidth: "500px", 
                   input: {
                     color: "white",
                   },
