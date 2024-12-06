@@ -5,7 +5,7 @@ import Textarea from '@mui/joy/Textarea';
 import FormControl from '@mui/joy/FormControl';
 import FormLabel from '@mui/joy/FormLabel';
 
-const FormInput = ({ label, type, name, register, id, componentType, error }) => {
+const FormInput = ({ label, type, name, register, id, componentType }) => {
   return (
     <FormControl>
       <div

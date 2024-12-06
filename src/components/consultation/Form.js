@@ -16,8 +16,6 @@ function Form() {
           flexDirection: "column",
           alignItems: "center",
           justifyItems: "center"
-  
-
       }}
     >
       <FormComponent

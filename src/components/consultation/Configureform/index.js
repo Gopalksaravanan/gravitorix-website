@@ -33,9 +33,5 @@ export const contactForm = [
     label: "Brief about the project",
     componentType: "textarea",
   },
-  {
-    name: "projectdetail",
-    id: "projectdetail",
-    buttonText:"Submit"
-  }
+  
 ];
