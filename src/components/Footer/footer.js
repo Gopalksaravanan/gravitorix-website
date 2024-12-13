@@ -58,7 +58,7 @@ const Footer = () => {
             // marginTop: "20px",
           }}
         >
-          <section
+          {/* <section
             id="experience"
             style={{
               display: "flex",
@@ -101,7 +101,7 @@ const Footer = () => {
                 Years of Experience
               </span>
             </section>
-          </section>
+          </section> */}
 
           <section
             id="social_media"

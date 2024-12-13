@@ -3,13 +3,12 @@ import { Box, Typography } from "@mui/material";
 import { Grid } from "@mui/joy";
 import Image1 from "../../assets/Group 25.svg";
 import IntroductionImage from "../../assets/introduction.svg";
-import Experienceimage from '../../assets/Group 34.svg'
+import Experienceimage from "../../assets/Group 34.svg";
 
 function IntroductionComponent() {
   return (
-    <div style={{backgroundColor:"#F5F5F5"}}>
-
-      <div style={{ display: "flex", justifyContent: "center",  }}>
+    <div style={{ backgroundColor: "#F5F5F5" }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <img
           src={IntroductionImage}
           alt="Introduction map"
@@ -32,17 +31,11 @@ function IntroductionComponent() {
           flexDirection: "column",
           justifySelf: "center",
           position: "relative",
-          marginTop:3,
-          marginBottom:3
+          marginTop: 3,
+          marginBottom: 3,
         }}
       >
-        <Grid
-          container
-          spacing={2}
-          alignItems="stretch"
-          sx={{ width: "100%" }}
-        >
-
+        <Grid container spacing={2} alignItems="stretch" sx={{ width: "100%" }}>
           <Grid
             xs={12}
             md={6}
@@ -53,22 +46,50 @@ function IntroductionComponent() {
               padding: "20px",
             }}
           >
-            <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: 2,textAlign:"left",color:"#283fe0" }}>
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: "bold",
+                marginBottom: 2,
+                textAlign: "left",
+                color: "#283fe0",
+              }}
+            >
               Trusted Offshore Developers for Your Tech Needs
             </Typography>
-            <Typography variant="body1" sx={{ marginBottom: 2, fontSize: 18 , lineBreak:1.5,textAlign:"left"}}>
-              Looking to hire offshore developers for your projects? Gravitorix is proud to present its pool of XX+ tech
-              experts, with experience across various domains. Our dedicated developers are proficient in various
-              technologies, tools, and frameworks. With our AI-powered development practices, scale your team as needed
-              without the issue of long-term commitments.
+            <Typography
+              variant="body1"
+              sx={{
+                marginBottom: 2,
+                fontSize: 18,
+                lineBreak: 1.5,
+                textAlign: "left",
+              }}
+            >
+              Looking to hire offshore developers for your projects? At{" "}
+              <span style={{ fontWeight: "bold" }}>Gravitorix</span>, we are
+              passionate about creating innovative software solutions that
+              empower businesses and redefine possibilities. Our expertise spans
+              across diverse industries such as{" "}
+              <span style={{ fontWeight: "bold" }}>
+                Fintech, OTT platforms, Edutech, and E-commerce,
+              </span>{" "}
+              where we deliver cutting-edge technology tailored to your needs.
             </Typography>
-            <Typography variant="body1" sx={{ fontSize: 18, lineBreak:1.5,textAlign:"left" }}>
-              Get in touch to discuss your project requirements, access our 40-hour free trial, and hire software
-              developers for your team! Let Gravitorix be your trusted outsourcing partner for all your remote tech
-              hiring needs.
+            <Typography
+              variant="body1"
+              sx={{ fontSize: 18, lineBreak: 1.5, textAlign: "left" }}
+            >
+              Our mission is to empower our clients with tools that enhance
+              productivity, drive growth, and ensure seamless user experiences.
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ fontSize: 18, lineBreak: 1.5, textAlign: "left",marginTop:'10px',fontStyle:'italic' }}
+            >
+              Let’s innovate, collaborate, and shape the future together!
             </Typography>
           </Grid>
-
 
           <Grid
             xs={12}
@@ -76,7 +97,7 @@ function IntroductionComponent() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
             }}
           >
             <img
@@ -92,7 +113,7 @@ function IntroductionComponent() {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ width: "100%",  display: "flex", justifyContent: "center"  }}>
+      {/* <Box sx={{ width: "100%",  display: "flex", justifyContent: "center"  }}>
         <img
           src={Experienceimage}
           alt="Experience Image "
@@ -104,7 +125,7 @@ function IntroductionComponent() {
             marginBottom:"50px"
           }}
         />
-      </Box>
+      </Box> */}
     </div>
   );
 }

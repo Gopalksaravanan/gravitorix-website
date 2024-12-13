@@ -55,11 +55,11 @@ const FirstPage = () => {
           }}
         >
           <p>
-            Hire offshore developers from our team of <br /> XX+ experts who
-            utilize advanced AI tools. <br /> We’ve helped XX+ global clients in
+            Hire offshore developers from our team of <br /> experts who
+            utilize advanced AI tools. <br /> We’ve helped global clients in
             scaling <br />
             up faster, accelerating tasks, reducing <br /> development costs by
-            XX%, and unlocking <br />
+            100%, and unlocking <br />
             new opportunities with data-driven insights.
           </p>
         </section>
@@ -88,7 +88,7 @@ const FirstPage = () => {
                 cursor: "pointer",
               }}
             >
-              Enquiry Now
+              Enquire Now
             </a>
           </button>
         </section>
